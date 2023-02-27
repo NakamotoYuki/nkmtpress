@@ -1,0 +1,202 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+// 共通設定
+h1,h2 {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  border-left: 6px solid var(--gray-dark);
+  @extend .pl-2;
+  @extend .mt-4;
+  @extend .mb-4;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+code {
+  color: #444;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #F0F0F0;
+}
+
+// ビルボードエリア
+.jumbotron {
+    background:url("/wp-content/themes/nkmtpress/img/main.jpg") center no-repeat; background-size: cover;
+}
+
+// ナビゲーションエリア
+a.nav-link{
+  color: var(--white);
+}
+
+a.nav-link:hover {
+  color: var(--pink);
+}
+
+.badge {
+  border: .5px solid;
+  border-color: var(--pink);
+}
+
+.badge > a {
+  color: var(--pink);
+}
+
+.badge > a:hover {
+  color: var(--gray-dark);
+}
+footer {
+  background-color: var(--gray-dark);
+  overflow: hidden;
+}
+
+  img{
+    max-width:100%;
+    height: auto;
+  }
+  .main {
+  }
+
+  .main > p{
+    line-height: 2rem;
+  }
+
+  .title {
+    border-bottom: 2px solid #000;
+  }
+
+// サイドばーエリア
+
+.prof-block{
+  
+}
+
+// カテゴリエリア
+.cate-block > .list-group > .list-group-item > a{
+  color: var(--gray-dark);
+}
+
+.cate-block > .list-group > .list-group-item > a:hover{
+  color: var(--danger);
+}
+
+// 最近の投稿
+.recent-post > .list-group > .list-group-item > a{
+  color: var(--gray-dark);
+}
+
+.recent-post > .list-group > .list-group-item > a:hover{
+  color: var(--danger);
+}
+
+  .content {
+    text-align: left;
+  }
+  .copyright{
+    text-align: center;
+    margin: 50px 0;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+  }
+
+  .border-5{
+    border-left: 5px;
+  }
+
+  button > a {
+    color: #3c3c3c;
+    text-decoration: none;
+  }
+
+  button > a:hover {
+    color: #FFFFFF;
+  }
+
+  .widgettitle {
+    font-size: 0.6 rem;
+  }
+
+  .cat-item{
+    list-style: none;
+  }
+
+.nav-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+}
+
+nav > a{
+    color: var(--white);
+}
+
+.left-cate > ul {
+  padding: 0;
+}
+
+// 目次エリア
+.toc-area{
+  @extend .p-2;
+  background-color: var(--light);
+}
+
+.toc-area > .toc-title {
+  @extend .text-center;
+  @extend .font-weight-bold;
+}
+
+.toc-area > .toc-items {
+  @extend .mb-0;
+  list-style: none;
+}
+
+.toc-area > .toc-items > .toc-item{
+  @extend .small;
+  line-height: 1.6rem;
+}
+
+.toc-area > .toc-items > .toc-item > .toc-text{
+  color: var(--dark);
+}
+
+.toc-area > .toc-items > .toc-item > .toc-text:hover{
+  color: var(--pink);
+}
+// ページネーション
+
+.pagination > li > a{
+  color: var(--dark);
+}
+
+.pagination > li > a:hover{
+  color: var(--pink);
+}
+
+.footer-copyright {
+  margin: 0;
+  color: var(--white);
+}
+
+// スペーシング
+.p-0 {
+  padding: 0 !important;
+}
+
+.mt-20{
+  margin-top: 20px !important;
+}
+.mb-40{
+  margin-bottom: 40px !important;
+}
+
+// フォームのページ
+.form-block > input {
+  @extend .form-control;
+}
